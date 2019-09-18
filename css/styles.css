@@ -1,0 +1,14 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        background-color: aqua;
+    }
+}
