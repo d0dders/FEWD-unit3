@@ -45,7 +45,8 @@ fieldset {
     flex-direction: column;
 }
 
-input,
+input[type="text"],
+input[type="email"],
 select,
 textarea {
     background-color: #F0EFF2;
