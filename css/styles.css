@@ -54,6 +54,7 @@ textarea {
     border-radius: 6px;
     margin-top: 15px;
     margin-bottom: 25px;
+    width: 100%
 }
 
 input:focus,
