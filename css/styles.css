@@ -5,6 +5,7 @@
 body {
     font-size: 1.2rem;
     color: rgb(61, 82, 105);
+    font-family: 'Merriweather', serif;
 }
 
 header {
@@ -33,12 +34,22 @@ main {
 /* FORM ELEMENT CSS */
 
 fieldset {
+    position:relative;
     border: none;
     border-top: 3px solid rgb(61, 82, 105);
     padding: 0;
+    padding-top: 80px;
     margin: 0;
     width: 100%;
 }
+
+legend {
+    position:absolute;
+    top:20px;
+    font-size: 1.5em;
+}​
+
+
 
 .field {
     display: flex;
