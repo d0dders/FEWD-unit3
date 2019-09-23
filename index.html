@@ -17,7 +17,7 @@
                 <p>Get the latest news on how your code is doing right in you inbox</p>
             </section>
             <form action="">
-                <fieldset>
+                <fieldset id="fs-contact-information">
                     <legend>Contact Information</legend>
                     <div class="field">
                         <label for="name">Full Name</label>
@@ -103,29 +103,16 @@
                 </fieldset>
                 <fieldset>
                     <legend>Newsletter</legend>
-                    <label class="nl-label">Select the newsletters you would like to receive</label>
-                    <div>
-                        <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="light" for="html">HTML News</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="css" value="interest_css" name="user_interest"><label for="css">CSS News</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest"><label for="javascript">Javascript News</label>
-                    </div>
-                    <div>
-                    <label class="nl-label">Newsletter Format</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="htmlformat" value="html_format" name="newsletter_format"><label for="htmlformat">HTML</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="plaintext" value="plaintext_format" name="newsletter_format"><label for="plaintext">Plain text</label>
-                    </div>
-                    <div class="field">
-                        <label class="nl-label" for="topics">Other topics you'd like to hear about</label>
-                        <textarea id="topics" name="other_topics" cols="30" rows="10"></textarea>
-                    </div>
+                    <p class="nl-label">Select the newsletters you would like to receive</p>
+                    <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="light" for="html">HTML News</label><br>
+                  <input type="checkbox" id="css" value="interest_css" name="user_interest"><label for="css">CSS News</label><br>
+                  <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest"><label for="javascript">Javascript News</label><br>
+                  <p class="nl-label">Newsletter Format</p>
+                  <input type="radio" id="htmlformat" value="html_format" name="newsletter_format"><label for="htmlformat">HTML</label><br>
+                  <input type="radio" id="plaintext" value="plaintext_format" name="newsletter_format"><label for="plaintext">Plain text</label><br>
+                    <p><label class="nl-label" for="topics">Other topics you'd like to hear about</label></p>
+                    <textarea id="topics" name="other_topics" cols="30" rows="10"></textarea>
+                  
                 </fieldset>
 
                 <input type="submit" value="Sign Up">

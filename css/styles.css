@@ -43,6 +43,10 @@ fieldset {
     width: 100%;
 }
 
+#fs-contact-information {
+    margin-bottom: 30px;
+}
+
 legend {
     position:absolute;
     top:20px;
@@ -102,6 +106,7 @@ option {
 
 #zip {
     max-width: 200px;
+    display: block;
 }
 
 .nl-label {
@@ -138,8 +143,38 @@ footer {
 
 
 @media only screen and (min-width:768px) {
-    body {
+    /* body {
         background-color: aqua;
+    } */
+
+    .field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .field label{
+        width: 200px;
+        flex-shrink: 0;
+        display: inline-block;
+        
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        
+        width: 100%;
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+ 
+
+    #zip {
+        display: inline-block;
+        
     }
 
 }
