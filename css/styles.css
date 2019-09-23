@@ -59,7 +59,15 @@ textarea {
     width: 100%
 }
 
-input:focus,
+textarea {
+    height: 150px;
+    margin-top: 0px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     outline: 0;
@@ -73,20 +81,54 @@ input::placeholder {
     padding-right: 15px;
 }
 
+select:invalid {
+    color: grey;
+}
+
+option {
+    color: black;
+}
+
 #zip {
-    width: 200px;
+    max-width: 200px;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
-    margin-left: 10px;
+.nl-label {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 18px;
+    margin-right: 13px;
 }
 
 
+input[type="submit"] {
+    width:100%;
+    background-color: #52bab3;
+    color: white;
+    border: none;
+    padding: 20px 0;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    margin: 40px;
+}
 
 
 @media only screen and (min-width:768px) {
     body {
         background-color: aqua;
     }
+
 }

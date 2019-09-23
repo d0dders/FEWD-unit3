@@ -40,7 +40,7 @@
                     </div>
                     <div class="field">
                     <label for="state">State</label>
-                        <select id="state" name="state_address" placeholder="Choose State">
+                        <select id="state" name="state_address" placeholder="Choose State" required>
                             <option value="" disabled selected hidden>Choose State</option>
                             <option value="AL">Alabama (AL)</option>
                             <option value="AK">Alaska (AK)</option>
@@ -103,32 +103,36 @@
                 <fieldset>
                     <h2>Newsletter</h2>
                     
-                        <label>Select the newsletters you would like to receive</label>
-                        <br>
-                        <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="light" for="html">Development</label>
-                        <br>
-                        <input type="checkbox" id="css" value="interest_css" name="user_interest"><label for="css">Design</label>
-                        <br>
-                        <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest"><label for="javascript">Business</label>
+                    <label class="nl-label">Select the newsletters you would like to receive</label>
                     <div>
-                  
-                        <label>Newsletter Format</label>
-                        <br>
+                        <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="light" for="html">HTML News</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css" value="interest_css" name="user_interest"><label for="css">CSS News</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest"><label for="javascript">Javascript News</label>
+                    </div>
+                    <div>
+                    <label class="nl-label">Newsletter Format</label>
+                    </div>
+                    <div>
                         <input type="radio" id="htmlformat" value="html_format" name="newsletter_format"><label for="htmlformat">HTML</label>
-                        <br>
+                    </div>
+                    <div>
                         <input type="radio" id="plaintext" value="plaintext_format" name="newsletter_format"><label for="plaintext">Plain text</label>
                     </div>
                     <div class="field">
-                        <label for="topics">Other topics you'd like to hear about</label>
+                        <label class="nl-label" for="topics">Other topics you'd like to hear about</label>
                         <textarea id="topics" name="other_topics" cols="30" rows="10"></textarea>
                     </div>
                 </fieldset>
 
-                <button type="submit">Sign Up</button>
+                <input type="submit" value="Sign Up">
             </form>
         </main>
         <footer>
-            Copyright The Code Review
+            &copy; The Code Review
         </footer>
     </body>
 </html>
