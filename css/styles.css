@@ -38,7 +38,7 @@ fieldset {
     border: none;
     border-top: 3px solid rgb(61, 82, 105);
     padding: 0;
-    padding-top: 80px;
+    padding-top: 90px;
     margin: 0;
     width: 100%;
 }
@@ -49,8 +49,9 @@ fieldset {
 
 legend {
     position:absolute;
-    top:20px;
+    top:30px;
     font-size: 1.5em;
+    font-weight: bold;
 }​
 
 
