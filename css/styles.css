@@ -18,6 +18,7 @@ header {
 main {
     width: 95%;
     margin: auto;
+    max-width: 850px;
 }
 
 .site-description {
