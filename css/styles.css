@@ -136,9 +136,11 @@ input[type="submit"] {
 
 footer {
     text-align: center;
-    color: grey;
+    color: white;
     font-style: italic;
-    margin: 40px;
+    padding: 40px;
+    margin-top: 40px;
+    background-color: rgb(61, 82, 105);
 }
 
 
