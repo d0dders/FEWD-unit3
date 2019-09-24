@@ -69,11 +69,12 @@ select,
 textarea {
     background-color: #F0EFF2;
     padding: 16px;
-    border: none;
+    border: 2px solid rgba(61, 82, 105, .0); /* Set border transparent to prevent shifting when in focus */
     border-radius: 6px;
     margin-top: 15px;
     margin-bottom: 25px;
-    width: 100%
+    width: 100%;
+    transition: border-color 1s;
 }
 
 textarea {
@@ -88,8 +89,7 @@ input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     outline: 0;
-    border: 2px solid rgb(61, 82, 105);
-    border-radius: 6px;
+    border-color: rgba(61, 82, 105, 1);
 }
 
 input::placeholder {
